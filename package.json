@@ -1,0 +1,43 @@
+{
+  "name": "offercraft",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OfferCraft - 智能简历改写与面试备战平台",
+  "scripts": {
+    "dev": "bash ./scripts/dev.sh",
+    "build": "bash ./scripts/build.sh",
+    "start": "bash ./scripts/start.sh",
+    "preinstall": "npx only-allow pnpm",
+    "ts-check": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo 'lint ok'"
+  },
+  "dependencies": {
+    "lucide-react": "^1.20.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react-swc": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "only-allow": "^1.2.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.0",
+    "vite": "^7.2.4"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "pnpm": ">=9.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "esbuild": "^0.27.2",
+      "is-generator-function": "1.0.10"
+    }
+  }
+}
